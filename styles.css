@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 body{
 	font-family: 'Montserrat', sans-serif;
@@ -6,9 +7,9 @@ body{
 	font-size: 15px;
 	line-height: 1.7;
 	color: #ececee;
-	background-color: #c7c8d0;
+	background-color: #f2f2f7;
 	/* overflow: hidden; */
-  background-image: url('images/nick-jones-uRuLv7yBnD8-unsplash.jpg');
+  /* background-image: url('images/nick-jones-uRuLv7yBnD8-unsplash.jpg'); */
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,15 +17,22 @@ body{
   width: 100%;
   background-attachment: scroll;
   overflow: scroll;
+  margin: 0;
+  padding: 0;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'vtks distress';
-  src: url('fonts/vtks distress.ttf') format('truetype');
+  src: url('fonts/vtks distress.ttf') format('truetype'); */
+
+@font-face {
+  font-family: 'Irish Grover';
+  src: url('path/to/irish-grover.ttf') format('truetype');
 }
 
 .header {
   text-align: center;
+
 }
 
 .section-center{
@@ -41,12 +49,12 @@ body{
 }
 h1{
   font-family: 'vtks distress', sans-serif;
-  font-weight: 700;
+  font-weight: 520;
   font-size: 10vw;
   line-height: 1;
   color: rgb(53,55,70);
   text-align: center;
-  opacity: 0.8;
+  opacity: 0.9;
   margin-bottom: 0%;
   margin-top: 25px;
   /* -webkit-text-stroke: 2px #131414;
@@ -74,15 +82,16 @@ ul {
 }
 
 section {
-  background-color: rgb(31,101,113, 0.4);
+  background-color: transparent;
   /* opacity: 0.4; */
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
-  padding: 30px;
+  max-width: 1000px;
+  padding: 18px;
   margin-bottom: 30px;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 5px solid #f9fdfe; */
 }
 
 .subsection {
@@ -90,7 +99,7 @@ section {
 }
 
 p {
-  color: rgb(53,55,70);
+  color: rgb(51,51,51);
 }
 
 [type="checkbox"]:checked,
@@ -182,6 +191,7 @@ p {
   overflow: hidden;
   box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
   background-color: #353746;
+  /* background-image: url('images/andrey-haimin-4KgX7k3qjE0-unsplash.jpg') ; */
   animation: border-transform 7s linear infinite;
   transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
               right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
@@ -265,7 +275,7 @@ p {
 }
 .nav ul li a:hover{
   text-decoration: none;
-  color: #5ef69d;
+  color: #f4fc64;
 }
 .nav ul li a:after{
   display: block;
@@ -340,10 +350,292 @@ p {
     -webkit-text-stroke: 2px transparent;
     text-stroke: 2px transparent;
     -webkit-text-fill-color: #3eedf3;
-    text-fill-color: #6af68f;
+    text-fill-color: #fa06d1;
     color: #b523f4;
   }
   .nav ul li a{
     font-size: 8vh;
   }
+}
+
+.social-links {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background: transparent;
+  overflow: hidden;
+}
+
+.social-links ul {
+  position: relative;
+  display: flex;
+  align-items: center; /* Add this line */
+}
+
+.social-links li {
+  position: relative;
+  list-style: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.social-links li a {
+  text-decoration: none;
+  display: flex; /* Add this line */
+  align-items: center; /* Add this line */
+}
+
+.social-links li a .fa-brands {
+  font-size: 6em;
+  color: #30D5C8;
+}
+
+.social-links li a .fa-brands:hover {
+  animation: glowing 1.5s ease-in-out infinite; /* Add this line for glowing effect */
+}
+
+@keyframes glowing {
+  0% {
+    color: #222;
+    text-shadow: none;
+  }
+  50% {
+    color: #fff;
+    text-shadow: 0 0 8px #fff;
+  }
+  100% {
+    color: #222;
+    text-shadow: none;
+  }
+}
+
+/* .collection {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
 } */
+
+.collection {
+  display: flex;
+  justify-content: center;
+}
+
+.collection li {
+  margin-right: 10px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid rgb(16, 16, 16);
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #353746;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+  display: none;
+}
+
+.popup h3 {
+  margin-top: 0;
+}
+
+.popup p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.popup button {
+  background-color: #fff;
+  color: #353746;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+Footer {
+background-color: rgb(53,55,70);
+}
+/*
+.mindful {
+  background-color: rgb(51,51,51);
+  color: #ececee;
+}
+
+.naturally {
+  background-color: rgb(51,51,51);
+}
+ .collection {
+  background-color: rgb(51,51,51);
+ } */
+
+ /* Slideshow styles */
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Set the desired height of the slideshow */
+  overflow: hidden;
+}
+
+.slideshow .header-overlap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Ensure the header is displayed above the images */
+  text-align: center;
+  color: white;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preserve aspect ratio and fill the container */
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slideshow img:first-child {
+  opacity: 1;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Carousel styles */
+.carousel {
+  max-height: 750px; /* Set the desired height for the carousel */
+  overflow: hidden; /* Ensure the images stay within the specified height */
+  position: relative;
+}
+
+.carousel-inner {
+  max-width: 100%; /* Set the width to 100% to ensure the image fits the whole page */
+}
+
+.carousel-inner img {
+  object-fit: contain; /* Maintain aspect ratio and cover the entire container */
+  height: 100%; /* Set the height of the image to 100% to fill the carousel container */
+  width: 100%; /* Set the width of the image to 100% to fill the carousel container */
+  object-position: center bottom;
+}
+/* Other existing styles */
+
+.carousel-caption {
+  position: fixed;
+  top: 20px; /* Adjust this value to set the distance from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999; /* Set a higher z-index to ensure the captions stay above the carousel */
+  text-align: center;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.5); Set a background color for the captions */
+  padding: 10px;
+}
+
+/* Style for the custom logo */
+.custom-logo {
+  color: rgb(53,55,70);
+  position: absolute;
+  top: 20px; /* Adjust the top position as needed */
+  left: 10px; /* Adjust the left position as needed */
+  z-index: 2; /* Position the logo above the carousel */
+}
+.custom-h3 {
+  position: absolute;
+  top: 160px; /* Adjust the top position as needed */
+  left: 440px;
+  right: -5px; /* Adjust the right position as needed */
+  font-family: "Irish Grover", sans-serif;
+  font-size: 40px; /* Adjust the font size as needed */
+  color: black;
+  z-index: 2; /* Position the h3 header above the carousel */
+}
+
+/* Style for the carousel */
+.carousel {
+  position: relative;
+  z-index: 1; /* Set a lower z-index for the carousel to keep it below the logo */
+}
+
+.banner-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: 250px;
+  overflow: hidden; /* Ensure images don't overflow */
+
+  .banner-img {
+    width: calc(100vw / 4);
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px; /* Add rounded corners to the images */
+  }
+}
+
+.description {
+  font-weight: bold;
+  /* Add any other styles you want for the description */
+}
+
+.benefits {
+  /* Add any styles you want for the benefits list */
+}
+
+/* CSS for the gradient overlay */
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+}
