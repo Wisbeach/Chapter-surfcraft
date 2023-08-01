@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
 
 body{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Caveat', sans-serif;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1.7;
@@ -21,9 +23,6 @@ body{
   padding: 0;
 }
 
-/* @font-face {
-  font-family: 'vtks distress';
-  src: url('fonts/vtks distress.ttf') format('truetype'); */
 
 @font-face {
   font-family: 'Irish Grover';
@@ -52,7 +51,7 @@ h1{
   font-weight: 520;
   font-size: 10vw;
   line-height: 1;
-  color: rgb(53,55,70);
+  color: rgb(4, 4, 5);
   text-align: center;
   opacity: 0.9;
   margin-bottom: 0%;
@@ -89,9 +88,7 @@ section {
   max-width: 1000px;
   padding: 18px;
   margin-bottom: 30px;
-  /* border-radius: 50px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  border: 5px solid #f9fdfe; */
+
 }
 
 .subsection {
@@ -102,223 +99,10 @@ p {
   color: rgb(51,51,51);
 }
 
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked){
-  position: absolute;
-  left: -9999px;
-}
-.menu-icon:checked + label,
-.menu-icon:not(:checked) + label{
-  position: fixed;
-  top: 63px;
-  right: 75px;
-  display: block;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  z-index: 10;
-}
-.menu-icon:checked + label:before,
-.menu-icon:not(:checked) + label:before{
-  position: absolute;
-  content: '';
-  display: block;
-  width: 30px;
-  height: 20px;
-  z-index: 20;
-  top: 0;
-  left: 0;
-  border-top: 2px solid #ececee;
-  border-bottom: 2px solid #ececee;
-  transition: border-width 100ms 1500ms ease,
-              top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
-              height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
-              background-color 200ms ease,
-              transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-.menu-icon:checked + label:after,
-.menu-icon:not(:checked) + label:after{
-  position: absolute;
-  content: '';
-  display: block;
-  width: 22px;
-  height: 2px;
-  z-index: 20;
-  top: 10px;
-  right: 4px;
-  background-color: #ececee;
-  margin-top: -1px;
-  transition: width 100ms 1750ms ease,
-              right 100ms 1750ms ease,
-              margin-top 100ms ease,
-              transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-.menu-icon:checked + label:before{
-  top: 10px;
-  transform: rotate(45deg);
-  height: 2px;
-  background-color: #ececee;
-  border-width: 0;
-  transition: border-width 100ms 340ms ease,
-              top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-              height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-              background-color 200ms 500ms ease,
-              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-.menu-icon:checked + label:after{
-  width: 30px;
-  margin-top: 0;
-  right: 0;
-  transform: rotate(-45deg);
-  transition: width 100ms ease,
-              right 100ms ease,
-              margin-top 100ms 500ms ease,
-              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.nav{
-  position: fixed;
-  top: 33px;
-  right: 50px;
-  display: block;
-  width: 80px;
-  height: 80px;
-  padding: 0;
-  margin: 0;
-  z-index: 9;
-  overflow: hidden;
-  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
-  background-color: #353746;
-  /* background-image: url('images/andrey-haimin-4KgX7k3qjE0-unsplash.jpg') ; */
-  animation: border-transform 7s linear infinite;
-  transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
-              right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
-              transform 250ms 1100ms ease,
-              width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
-              height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-@keyframes border-transform{
-    0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; }
-  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; }
-  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; }
-  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; }
-  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; }
-  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; }
-  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; }
-}
-
-.menu-icon:checked ~ .nav {
-  animation-play-state: paused;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  width: 200%;
-  height: 200%;
-  transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),
-              right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),
-              transform 250ms 700ms ease,
-              width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1),
-              height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.nav ul{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  z-index: 6;
-  text-align: center;
-  transform: translateY(-50%);
-  list-style: none;
-}
-.nav ul li{
-  position: relative;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 10px 0;
-  text-align: center;
-  list-style: none;
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(30px);
-  transition: all 250ms linear;
-}
-.nav ul li:nth-child(1){
-  transition-delay: 200ms;
-}
-.nav ul li:nth-child(2){
-  transition-delay: 150ms;
-}
-.nav ul li:nth-child(3){
-  transition-delay: 100ms;
-}
-.nav ul li:nth-child(4){
-  transition-delay: 50ms;
-}
-.nav ul li a{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9vh;
-  text-transform: uppercase;
-  line-height: 1.2;
-  font-weight: 800;
-  display: inline-block;
-  position: relative;
-  color: #ececee;
-  transition: all 250ms linear;
-}
-.nav ul li a:hover{
-  text-decoration: none;
-  color: #f4fc64;
-}
-.nav ul li a:after{
-  display: block;
-  position: absolute;
-  top: 50%;
-  content: '';
-  height: 2vh;
-  margin-top: -1vh;
-  width: 0;
-  left: 0;
-  background-color: #353746;
-  opacity: 0.8;
-  transition: width 250ms linear;
-}
-.nav ul li a:hover:after{
-  width: 100%;
-}
-
-
-.menu-icon:checked ~ .nav  ul li {
-  pointer-events: auto;
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 350ms ease,
-              transform 250ms ease;
-}
-.menu-icon:checked ~ .nav ul li:nth-child(1){
-  transition-delay: 1400ms;
-}
-.menu-icon:checked ~ .nav ul li:nth-child(2){
-  transition-delay: 1480ms;
-}
-.menu-icon:checked ~ .nav ul li:nth-child(3){
-  transition-delay: 1560ms;
-}
-.menu-icon:checked ~ .nav ul li:nth-child(4){
-  transition-delay: 1640ms;
-}
 
 
 
-.logo {
+/* .logo {
 	position: absolute;
 	top: 60px;
 	left: 50px;
@@ -330,7 +114,7 @@ p {
 	height: 26px;
 	width: auto;
 	display: block;
-}
+} */
 
 
 
@@ -654,21 +438,7 @@ p {
 }
 
 
-
-
-
-
-/* 本体には関係ないスタイル */
-/* .container{
-  width : 100% ;
-  height : 300px ;
-  display : flex ;
-  flex-direction : column ;
-  justify-content : center ;
-  align-items : center ;
-} */
-
-.popup {
+/* .popup {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -697,33 +467,20 @@ p {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-}
+} */
 
 Footer {
 background-color: rgb(53,55,70);
 }
-/*
-.mindful {
-  background-color: rgb(51,51,51);
-  color: #ececee;
-}
 
-.naturally {
-  background-color: rgb(51,51,51);
-}
- .collection {
-  background-color: rgb(51,51,51);
- } */
-
- /* Slideshow styles */
-.slideshow {
+/* .slideshow {
   position: relative;
   width: 100%;
   height: 400px; /* Set the desired height of the slideshow */
   overflow: hidden;
 }
 
-.slideshow .header-overlap {
+/* .slideshow .header-overlap {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -731,9 +488,9 @@ background-color: rgb(53,55,70);
   z-index: 2; /* Ensure the header is displayed above the images */
   text-align: center;
   color: white;
-}
+} */
 
-.slideshow img {
+/* .slideshow img {
   position: absolute;
   top: 0;
   left: 0;
@@ -742,11 +499,11 @@ background-color: rgb(53,55,70);
   object-fit: cover; /* Preserve aspect ratio and fill the container */
   opacity: 0;
   transition: opacity 1s ease;
-}
+} */
 
-.slideshow img:first-child {
+/* .slideshow img:first-child {
   opacity: 1;
-}
+} */ */
 
 .prev-btn,
 .next-btn {
@@ -772,14 +529,19 @@ background-color: rgb(53,55,70);
 
 /* Carousel styles */
 .carousel {
-  max-height: 750px; /* Set the desired height for the carousel */
+  max-height: 600px; /* Set the desired height for the carousel */
+  max-width: 900px;
   overflow: hidden; /* Ensure the images stay within the specified height */
   position: relative;
+  margin: 0 auto;
+  border-radius: 30px;
+
 }
 
-.carousel-inner {
-  max-width: 100%; /* Set the width to 100% to ensure the image fits the whole page */
-}
+/* .carousel-inner {
+  max-width: 900px; /* Set the width to 100% to ensure the image fits the whole page */
+  /* height: 600px; */
+} */
 
 .carousel-inner img {
   object-fit: contain; /* Maintain aspect ratio and cover the entire container */
@@ -790,40 +552,48 @@ background-color: rgb(53,55,70);
 /* Other existing styles */
 
 .carousel-caption {
-  position: fixed;
+  position: absolute;
   top: 20px; /* Adjust this value to set the distance from the top */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999; /* Set a higher z-index to ensure the captions stay above the carousel */
+  z-index: 1000; /* Set a higher z-index to ensure the captions stay above the carousel */
   text-align: center;
   color: white;
   /* background-color: rgba(0, 0, 0, 0.5); Set a background color for the captions */
   padding: 10px;
 }
 
+
 /* Style for the custom logo */
 .custom-logo {
   color: rgb(53,55,70);
   position: absolute;
+  height: 50px;
+  width: 250px;
   top: 20px; /* Adjust the top position as needed */
-  left: 10px; /* Adjust the left position as needed */
+  left: 250px; /* Adjust the left position as needed */
   z-index: 2; /* Position the logo above the carousel */
+  /* margin-bottom: 120px; */
 }
+
 .custom-h3 {
   position: absolute;
-  top: 160px; /* Adjust the top position as needed */
-  left: 440px;
+  top: 220px; /* Adjust the top position as needed */
+   left: 600px;
   right: -5px; /* Adjust the right position as needed */
-  font-family: "Irish Grover", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 40px; /* Adjust the font size as needed */
-  color: black;
+  font-weight: bold;
+  color: white;
+  /* color: black;
   z-index: 2; /* Position the h3 header above the carousel */
 }
 
+
 /* Style for the carousel */
-.carousel {
+ .carousel {
   position: relative;
-  z-index: 1; /* Set a lower z-index for the carousel to keep it below the logo */
+  z-index: 0; /* Set a lower z-index for the carousel to keep it below the logo */
 }
 
 .banner-container {
@@ -850,15 +620,8 @@ background-color: rgb(53,55,70);
   /* Add any styles you want for the benefits list */
 }
 
-/* CSS for the gradient overlay */
-/* .gradient-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
-} */
+
+
 
 /* Add styles for the featured image in the first blog post */
 .featured-image {
@@ -866,6 +629,7 @@ background-color: rgb(53,55,70);
   height: auto; /* This will maintain the aspect ratio */
   display: block; /* To remove any spacing around the image */
   margin: 0 auto; /* To center the image horizontally */
+  border-radius: 20px;
 }
 
 body.blog-page {
@@ -881,9 +645,40 @@ body.blog-page {
   padding: 60px;
 }
 
-page-container {
+.page-container {
   max-width: 1200px; /* Set a maximum width for the page container */
   margin: 0 auto; /* Center the container horizontally on the page */
   padding: 60px; /* Add some spacing around the container */
   /* Add other styling for the page container as needed */
+}
+
+.navbar-nav {
+  background-color: #fff; /* Replace "your-desired-color" with your preferred background color */
+  margin-top: 30px ;
+  margin-bottom: 30px ;
+  margin-right: 100px;
+}
+
+/* Custom styles for the menu items */
+.navbar-nav .nav-link {
+  color: #30D5C8 !important;
+  font-size: 2em;
+  text-decoration: none; /* Add this line to remove underline */
+}
+
+/* Add this style for link hover effect */
+.navbar-nav .nav-link:hover {
+  color: #201246 !important;
+}
+
+.shaper-image {
+  width: 800px; /* Adjust the size as per your requirement */
+  height: auto; /* This will maintain the aspect ratio */
+  display: block; /* To remove any spacing around the image */
+  margin: 0 auto;
+  border-radius: 20px;
+}
+#carouselExampleIndicators {
+  margin-top: 100px; /* Adjust the value as needed to create space for the logo */
+  /* Add any other styles you want for the carousel */
 }
