@@ -642,11 +642,13 @@ body.blog-page {
 .blog-post-container {
   margin-bottom: 30px;
   max-width: 800px;
+  margin-left: 200px;
   padding: 60px;
 }
 
 .page-container {
   max-width: 1200px; /* Set a maximum width for the page container */
+
   margin: 0 auto; /* Center the container horizontally on the page */
   padding: 60px; /* Add some spacing around the container */
   /* Add other styling for the page container as needed */
@@ -682,3 +684,20 @@ body.blog-page {
   margin-top: 100px; /* Adjust the value as needed to create space for the logo */
   /* Add any other styles you want for the carousel */
 }
+
+/* iframe {
+  background-color: #fff;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  margin-right: 90px;
+}
+
+.iframe-nav-link {
+  color: #080909 !important;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.iframe-nav-link:hover {
+  color: #30D5C8 !important;
+} */
