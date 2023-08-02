@@ -571,7 +571,7 @@ background-color: rgb(53,55,70);
   height: 50px;
   width: 250px;
   top: 20px; /* Adjust the top position as needed */
-  left: 250px; /* Adjust the left position as needed */
+  left: 230px; /* Adjust the left position as needed */
   z-index: 2; /* Position the logo above the carousel */
   /* margin-bottom: 120px; */
 }
@@ -654,21 +654,21 @@ body.blog-page {
 
 .navbar-nav {
   background-color: #fff; /* Replace "your-desired-color" with your preferred background color */
-  margin-top: 30px ;
+  margin-top: 120px ;
   margin-bottom: 30px ;
-  margin-right: 100px;
+  margin-right: 90px;
 }
 
 /* Custom styles for the menu items */
 .navbar-nav .nav-link {
-  color: #30D5C8 !important;
+  color: #080909 !important;
   font-size: 2em;
   text-decoration: none; /* Add this line to remove underline */
 }
 
 /* Add this style for link hover effect */
 .navbar-nav .nav-link:hover {
-  color: #201246 !important;
+  color: #30D5C8 !important;
 }
 
 .shaper-image {
