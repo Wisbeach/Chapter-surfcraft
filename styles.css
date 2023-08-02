@@ -571,7 +571,7 @@ background-color: rgb(53,55,70);
   height: 50px;
   width: 250px;
   top: 20px; /* Adjust the top position as needed */
-  left: 230px; /* Adjust the left position as needed */
+  left: 280px; /* Adjust the left position as needed */
   z-index: 2; /* Position the logo above the carousel */
   /* margin-bottom: 120px; */
 }
@@ -656,7 +656,7 @@ body.blog-page {
 
 .navbar-nav {
   background-color: #fff; /* Replace "your-desired-color" with your preferred background color */
-  margin-top: 120px ;
+  margin-top: 50px ;
   margin-bottom: 30px ;
   margin-right: 90px;
 }
