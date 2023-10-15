@@ -2,6 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
+@font-face {
+  font-family: 'Brushed'; /* Replace with a suitable font name */
+  src: url('fonts/Brushed.ttf') format('truetype');
+  letter-spacing: 2px;
+  /* Adjust the path to your TTF file */
+}
+
+@font-face {
+  font-family: 'D Day Stencil'; /* Replace with a suitable font name */
+  src: url('fonts/D Day Stencil.ttf') format('truetype');
+  /* Adjust the path to your TTF file */
+}
 
 body{
 	font-family: 'Caveat', sans-serif;
@@ -150,7 +162,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 150px;
   background: transparent;
   overflow: hidden;
 }
@@ -175,7 +187,7 @@ p {
 }
 
 .social-links li a .fa-brands {
-  font-size: 6em;
+  font-size: 4em;
   color: #30D5C8;
 }
 
@@ -538,6 +550,11 @@ background-color: rgb(53,55,70);
 
 }
 
+#carouselExampleIndicators {
+  margin-top: 10px; /* Adjust the top margin to create space */
+  /* Add any other styles you want for the carousel */
+}
+
 /* .carousel-inner {
   max-width: 900px; /* Set the width to 100% to ensure the image fits the whole page */
   /* height: 600px; */
@@ -578,14 +595,13 @@ background-color: rgb(53,55,70);
 
 .custom-h3 {
   position: absolute;
-  top: 220px; /* Adjust the top position as needed */
-   left: 600px;
-  right: -5px; /* Adjust the right position as needed */
-  font-family: "Rubik", sans-serif;
-  font-size: 40px; /* Adjust the font size as needed */
-  font-weight: bold;
-  color: white;
-  /* color: black;
+  top: 20px; /* Adjust the top position to your preference */
+  right: 10px; /* Adjust the right position to your preference */
+  font-family: "D Day Stencil", sans-serif;
+  font-size: 80px; /* Adjust the font size as needed */
+  /* font-weight: bold; */
+  color: rgb(255, 53, 245);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   z-index: 2; /* Position the h3 header above the carousel */
 }
 
@@ -657,7 +673,7 @@ body.blog-page {
 .navbar-nav {
   background-color: #fff; /* Replace "your-desired-color" with your preferred background color */
   margin-top: 50px ;
-  margin-bottom: 30px ;
+  margin-bottom: 10px ;
   margin-right: 90px;
 }
 
@@ -681,7 +697,7 @@ body.blog-page {
   border-radius: 20px;
 }
 #carouselExampleIndicators {
-  margin-top: 100px; /* Adjust the value as needed to create space for the logo */
+  margin-top: 20px; /* Adjust the value as needed to create space for the logo */
   /* Add any other styles you want for the carousel */
 }
 
@@ -701,3 +717,17 @@ body.blog-page {
 .iframe-nav-link:hover {
   color: #30D5C8 !important;
 } */
+.surfboardlogo {
+  display: flex;
+  justify-content: space-around; /* Distributes space around the image */
+  align-items: center; /* Centers vertically */
+  width: 900px;
+  max-width: 100%; /* Ensure the image doesn't exceed the viewport width */
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: 2px solid #333;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
