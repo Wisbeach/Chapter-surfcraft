@@ -588,7 +588,7 @@ background-color: rgb(53,55,70);
   height: 50px;
   width: 250px;
   top: 20px; /* Adjust the top position as needed */
-  left: 280px; /* Adjust the left position as needed */
+  left: 100px; /* Adjust the left position as needed */
   z-index: 2; /* Position the logo above the carousel */
   /* margin-bottom: 120px; */
 }
@@ -674,7 +674,7 @@ body.blog-page {
   background-color: #fff; /* Replace "your-desired-color" with your preferred background color */
   margin-top: 50px ;
   margin-bottom: 10px ;
-  margin-right: 90px;
+  margin-right: 150px;
 }
 
 /* Custom styles for the menu items */
@@ -718,21 +718,24 @@ body.blog-page {
   color: #30D5C8 !important;
 } */
 .surfboardlogo {
-  display: flex;
-  justify-content: space-around; /* Distributes space around the image */
-  align-items: center; /* Centers vertically */
-  width: 900px;
+  display: inline-block; /* Make the images sit horizontally */
+  margin: 10px; /* Add some space between them if needed */
+  justify-content: space-evenly; /* Distributes space around the image */
+  /* align-items: center; Centers vertically */
+  width: 400px;
   max-width: 100%; /* Ensure the image doesn't exceed the viewport width */
   height: auto;
   margin-top: 0px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
   border: 2px solid #333;
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* collectiion page */
+
+
 .collection-container {
 
     display: flex;
@@ -779,7 +782,18 @@ body.blog-page {
 .collection-h1 {
   font-family: "D Day Stencil", sans-serif;
   font-size: 60px;
+
   /* color: rgb(255, 53, 245); */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  margin-left: 200px;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); */
+  margin-left: 500px;
+}
+
+.aboutpagepic {
+  display: inline-block; /* Make the images sit horizontally */
+  margin: 10px; /* Add some space between them if needed */
+  justify-content: space-evenly; /* Distributes space around the image */
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  margin-left: 100px;
 }
