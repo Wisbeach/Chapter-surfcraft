@@ -23,7 +23,7 @@ body{
 	color: #ececee;
 	background-color: #f2f2f7;
 	/* overflow: hidden; */
-  /* background-image: url('images/nick-jones-uRuLv7yBnD8-unsplash.jpg'); */
+  /* background-image: url('images/romello-williams-tnY6r0masQk-unsplash.jpg'); */
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -741,6 +741,38 @@ body.blog-page {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+
+.image-links {
+  display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust this value to reduce/increase the gap */
+    padding: 20px;
+}
+.image-link {
+  text-align: center;
+}
+
+.image-link img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, filter 0.3s; /* Smooth transition for hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.image-link:hover img {
+    filter: brightness(70%); /* Darken the image on hover */
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.image-link a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
 /* collectiion page */
 
 
