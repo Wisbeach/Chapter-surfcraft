@@ -27,7 +27,7 @@ body{
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 2000px;
+  height: 1000px;
   width: 100%;
   background-attachment: scroll;
   overflow: scroll;
@@ -623,8 +623,47 @@ body.blog-page {
   display: inline-block; /* Make the images sit horizontally */
   margin: 10px; /* Add some space between them if needed */
   justify-content: space-evenly; /* Distributes space around the image */
-  width: 400px;
+  width: 200px;
   height: auto;
-  border-radius: 20px;
-  margin-left: 100px;
+
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 25px;
 }
+
+.origins-text {
+padding: 20px;
+
+}
+ .shaper-image {
+width: 600px;
+height: auto;
+ }
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Optional: Add some space below the image */
+}
+.origins-text a {
+  text-decoration: none; /* Remove underline */
+  text-align: center;
+}
+
+.origins-text a h5 {
+  margin-top: 10px;
+  color: #fa06d1;
+  text-decoration: none; /* Ensure no underline */
+  display: inline-block;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.origins-text a:hover h5 {
+  color: #3eedf3;
+  text-decoration: none; /* Ensure no underline on hover */
+}
+ .contact-link {
+ display: flex;
+ justify-content: center;
+ }
