@@ -680,7 +680,18 @@ height: auto;
 
 .contact-link a:hover h5 {
   color: #3eedf3;
-  text-decoration: none; /* Ensure no underline on hover */
+  text-decoration: none; Ensure no underline on hover */
+} */
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 20px; /* Add some space between the buttons */
+  margin-top: 20px; /* Add some margin to the top of the container */
+}
+
+.contact-button, .surfboards-button {
+  margin: 0; /* Remove default margin */
 }
 
 .contact-button {
@@ -717,4 +728,27 @@ height: auto;
   border: 0;
   border-radius: 15px; /* Rounded borders */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visual */
+}
+
+.surfboards-button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #3eedf3;
+  background-color: transparent;
+  border: 2px solid #3eedf3;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.surfboards-button:hover {
+  color: white;
+  border-color: #fa06d1;
+  background-color: #fa06d1;
+  text-decoration: none; /* Ensure no underline on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
