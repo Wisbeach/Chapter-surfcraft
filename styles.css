@@ -705,3 +705,16 @@ height: auto;
   text-decoration: none; /* Ensure no underline on hover */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
+
+.map-container {
+  margin: 20px 0; /* Add some margin around the map */
+  display: flex;
+  justify-content: center;
+}
+
+.map-container iframe {
+  max-width: 100%;
+  border: 0;
+  border-radius: 15px; /* Rounded borders */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visual */
+}
